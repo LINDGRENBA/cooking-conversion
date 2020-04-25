@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <h1>Cooking Conversions for your Kitchen Adventures</h1>
-    <p>Find the measurement you would like to convert, enter it into the appropriate form and submit.</p>
+    <p>Find the measurement you would like to convert, enter your units into the appropriate form and submit.</p>
 
       <div class="grid-container">
 
@@ -47,6 +47,23 @@
             </div>
             <button class="btn" type="submit">Convert</button>
             <!-- <button class="btn" type="submit">Clear</button> -->
+          </form>
+        </div>
+
+        <!-- GAL TO LITERS -->
+        <div class="grid-item">
+          <form /*action=""*/ id="galtoliters">
+            <h2>Gallons to Liters</h2>
+            <div class="form-group">
+              <label for="gallons">Number of gallons:</label>
+              <input type="text" id="gallons" class="form-control">
+            </div>
+            <h5 class="answer">Liters:</h5>
+            <div class="form-group output" id="liter-output">
+              <!-- EMPTY DIV WHERE ANSWER WILL APPEAR -->
+            </div>
+            <button class="btn" type="submit">Convert</button>
+             <!-- <button class="btn" type="submit">Clear</button> -->
           </form>
         </div>
 
