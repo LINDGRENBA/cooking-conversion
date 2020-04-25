@@ -8,6 +8,10 @@ let cupsToPints = function(userInput) {
   return userInput / 2;
 };
 
+let galToLiters = function(userInput) {
+  return userInput * 4;
+};
+
 
 //USER INTERFACE
 
@@ -32,7 +36,12 @@ $(document).ready(function() {
   });
 
   // GALLONS TO LITERS
-  $("#galtoliters")
+  $("#galtoliters").submit(function(event) {
+    event.preventDefault();
+    let userInput = parseInt($("#gallons").val());
+    let result = galToLiters(userInput);
+    $("#liter-output").text(result);
+  });
 
   // CREATE A FUNCTION TO CLEAR FIELD WHEN USER HITS CLEAR BUTTON
   // $("button.clear").click(function() {
