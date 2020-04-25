@@ -7,9 +7,52 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/jquery-3.5.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Cooking Conversions</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Cooking Conversions for your Kitchen Adventures</h1>
+    <p>Find the measurement you would like to convert, enter it into the appropriate form and submit.</p>
+
+      <div class="grid-container">
+
+        <!-- OZ TO GRAM FORM -->
+        <div class="grid-item">
+          <form /*action=""*/ id="oztogram">
+            <h2>Ounces to Grams</h2>
+            <div class="form-group">
+              <label for="ounces">Number of ounces:</label>
+              <input type="text" id="ounces" class="form-control clear-field">
+            </div>   
+            <h5 class="answer">Grams:</h5>
+            <div class="form-group output clear-field" id="gram-output">
+              <!-- EMPTY DIV WHERE ANSWER WILL APPEAR -->
+            </div>
+            <button class="btn" type="submit">Convert</button>
+            <!-- <button class="btn clear" type="submit">Clear</button> -->
+          </form>
+        </div>
+
+        <!-- CUP TO PINT FORM -->
+        <div class="grid-item">
+          <form /*action=""*/ id="cuptopint">
+            <h2>Cups to Pints</h2>
+            <div class="form-group">
+              <label for="cups">Number of cups:</label>
+              <input type="text" id="cups" class="form-control">
+            </div>
+            <h5 class="answer">Pints:</h5>
+            <div class="form-group output" id="pint-output">
+              <!-- EMPTY DIV WHERE ANSWER WILL APPEAR -->
+            </div>
+            <button class="btn" type="submit">Convert</button>
+            <!-- <button class="btn" type="submit">Clear</button> -->
+          </form>
+        </div>
+
+      </div>
+
+  </div>
   
 </body>
 </html>
