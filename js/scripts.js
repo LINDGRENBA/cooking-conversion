@@ -14,7 +14,7 @@ let cupsToPints = function(userInput) {
 
 $(document).ready(function() {
   // OZ TO GRAMS
-  $("#oztogram").submit(function(event) {
+  $("#oztograms").submit(function(event) {
     event.preventDefault();
     let userInput = parseInt($("#ounces").val());
     let result = ouncesToGrams(userInput);
@@ -22,7 +22,7 @@ $(document).ready(function() {
   });
 
   // CUPS TO PINTS
-  $("#cuptopint").submit(function(event) {
+  $("#cuptopints").submit(function(event) {
     event.preventDefault();
     let userInput = parseInt($("#cups").val());
     let result = cupsToPints(userInput);
@@ -30,6 +30,9 @@ $(document).ready(function() {
     // BUG - IF CUPS IS 0.5, PINTS RESULT IS 0, BUT SHOULD BE 0.25
     // NEED TO SPECIFY NUMBER OF DECIMALS FOR RESULT/OUTPUT
   });
+
+  // GALLONS TO LITERS
+  $("#galtoliters")
 
   // CREATE A FUNCTION TO CLEAR FIELD WHEN USER HITS CLEAR BUTTON
   // $("button.clear").click(function() {
