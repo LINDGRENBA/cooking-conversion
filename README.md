@@ -17,8 +17,7 @@ The purpose of this project is to use javascript, jQuery and forms to help the u
 
 ## Known Bugs
 
-Unable to clear information from #output divs. If cups value is 0.5, pints result shows 0, but should show 0.25. Need to specify how many decimal places to show for resulting output.
-
+Unable to clear information from #output divs. Previous bugs regarding decimal place issues and whole number issues have been fixed.
 ## Support and contact details
 
 Please feel free to contact me through GitHub with any questions, ideas or concerns.
